@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人中心页</title>
+<link href="css/class_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.js"></script>
+<script type="text/javascript" src="js/jquery_003.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/gundong.js"></script>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
+<!--<link rel="stylesheet" href="css/icon.css">-->
+
+</head>
+
+<body>
+
+<div class="header">
+  <div class="header_l"> <a class="logo"><img src="images/logo.png" /></a>
+    <div class="navbar-nav">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="All_Courses.html">选课<a></li>
+        <li><a href="">通关题库<a></li>
+        <li><a>资讯<a></li>
+        <li><a>小组<a></li>
+        <li><a>...<a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header_r">
+    <form class="bs-example bs-example-form" role="form">
+      <div class="input-group input-group-lg">
+        <input name="q" id="q" placeholder="搜索" style="color:#a5c2db; width:80px; line-height:30px; height:30px; float:left; background:url(images/search.jpg) #fff 80px center no-repeat; padding:0 10px; outline:none; border-radius:20px;" type="text">
+      </div>
+    </form>
+    <div class="lovn">
+      <ul>
+        <li><a href="/login?goto=%2F">登录</a></li>
+        <li><a href="/register?goto=%2F">注册</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="big-pic">
+    <div class="user-info">
+      <h3 class="user-name clearfix"> <span>fuzi_1119</span><br />
+        页面重构设计 </h3>
+      <!--25-->
+      <p class="about-info"> 这位童鞋很懒，什么也没有留下~~！ </p>
+      <p class="user-desc"></p>
+      <div class="study-info clearfix">
+        <div class="item study-time"> <em> 0分</em><span>学习时长</span> </div>
+        <div class="item integral"> <em>0</em><span>赚取积分</span> </div>
+        <div class="item experience"> <em>0</em><span>获得经验</span> </div>
+      </div>
+      <!--.study-info end--> 
+    </div>
+    <!-- .user-info end --> 
+  </div>
+  <!-- .big-pic end -->
+  <div class="wrap">
+    <div class="slider">
+      <div class="user-pic">
+        <div class="user-pic-bg"></div>
+        <!--user-pic-big end--> 
+        <img class='img' src="images/user_03.png" alt=""/> </div>
+      <ul>
+        <li class="w1"><a href="" class="active"><i class="icono-file1"></i><span>课程</span><b class="icono-play1"></b></a></li>
+        <!--              -->
+        <li class="w1"><a href="" ><i class="icono-calendar1"></i><span>计划</span><b class="icon-drop_right1"></b></a></li>
+        <li class="w1"><a href="" ><i class="icon-yuanwen1"></i><span>猿问</span><b class="icon-drop_right1"></b></a></li>
+        <li class="w1"><a href="" ><i class="icon-blog1"></i><span>文章</span><b class="icon-drop_right1"></b></a></li>
+        <li class="w1"><a href="" ><i class="icon-wiki1"></i><span>wiki</span><b class="icon-drop_right1"></b></a></li>
+      </ul>
+    </div>
+    <!-- .slider end -->
+    <script type="text/javascript">
+    $(function(){
+    $(".w1").click(function(){
+        $(this).removeClass("w1");
+        $(this).addClass("w2");
+        $(this).siblings().removeClass("w2");
+        $(this).siblings().addClass("w1");
+    });
+});
+    </script>
+    <div class="u-container">
+    <div class="wz" style="margin-top:30px;"><img src="images/user_15.jpg" />语句结构、函数和数组。每个阶段都配有练习题同时提供在线编程任务。<a href=""><img src="images/user_16.jpg" style="padding-right:10px;" />进入直播室</a></div>
+    <div class="dkkkk">
+      <div class="c-tab clearfix">
+        <div class="tool-left l"> <a href="" class="kjy_a sort-item" id=Button61 OnMouseOver="TabMove(6,1,2)">我的课程</a> <a href="" class="kjy sort-item" id=Button62 OnMouseOver="TabMove(6,2,2)">我的直播表</a></div>
+        <div class="tool-right r">
+          <div class="tool-all"> <span id="js-columall" class="tool-item"> <span> 全部课程 </span> <i class="tool-item icon icono-caretDown"><img src="images/user_010.jpg" /></i> </span>
+            <ul id="js-columbd" class="all-cont" >
+              <li><a data-id="0" href="">全部课程</a></li>
+              <li><a data-id="220" href="">JAVA</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="js-course-list my-space-course study-tl" id="ContentBox61" style="margin-top:20px;">
+        <div class="clearfix tl-item  tl-item-first" > <span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em> </span>
+          <div class="course-list course-list-m">
+            <ul class="clearfix">
+              <li class="course-one" data-courseid="85" data-uid="3067577" >
+                <div class="course-list-img l"> <a href="" target="_blank"> <img width="200" height="113" alt="人力资源管理师二级经典取证班" src="images/user_01.jpg" /> </a> </div>
+                <div class="course-list-cont">
+                  <h3 class="study-hd" style="display:block; width:600px;"> <a href="" target="_blank">Java入门第一季</a> <span class="i-new">更新完毕</span> 
+                    <!-- 更新完毕 --> 
+                    <!-- 关注和删除 --> 
+                  </h3>
+                  <div class="study-points" style=""> <span class="i-left span-common">已学0%</span> <span class="i-mid span-common">用时 0分</span> <span class="i-right span-common">学习至1-1 Java简介</span> </div>
+                  <div class="catog-points"  style="margin-top:30px;"> <span class="i-left span-common"><a href="">课时 <i>0</i></a></span> <span class="i-mid span-common"><a href="">笔记 <i>0</i></a></span> <span class="i-right span-common"><a href="">问答 <i>0</i></a></span>
+                    <div class="jxxx"><a>继续学习</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix tl-item  tl-item-first"> <span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em> </span>
+          <div class="course-list course-list-m">
+            <ul class="clearfix">
+              <li class="course-one" data-courseid="85" data-uid="3067577">
+                <div class="course-list-img l"> <a href="" target="_blank"> <img width="200" height="113" alt="人力资源管理师二级经典取证班" src="images/user_02.jpg" /> </a> </div>
+                <div class="course-list-cont">
+                  <h3 class="study-hd" style="display:block; width:600px;"> <a href="" target="_blank">Java入门第一季</a> <span class="i-new">更新完毕</span> 
+                    <!-- 更新完毕 --> 
+                    <!-- 关注和删除 --> 
+                  </h3>
+                  <div class="study-points" style=""> <span class="i-left span-common">已学0%</span> <span class="i-mid span-common">用时 0分</span> <span class="i-right span-common">学习至1-1 Java简介</span> </div>
+                  <div class="catog-points"  style="margin-top:30px;"> <span class="i-left span-common"><a href="">课时 <i>0</i></a></span> <span class="i-mid span-common"><a href="">笔记 <i>0</i></a></span> <span class="i-right span-common"><a href="">问答 <i>0</i></a></span>
+                    <div class="jxxx"><a>继续学习</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix tl-item  tl-item-first"> <span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em> </span>
+          <div class="course-list course-list-m">
+            <ul class="clearfix">
+              <li class="course-one" data-courseid="85" data-uid="3067577">
+                <div class="course-list-img l"> <a href="" target="_blank"> <img width="200" height="113" alt="人力资源管理师二级经典取证班" src="images/user_02.jpg" /> </a> </div>
+                <div class="course-list-cont">
+                  <h3 class="study-hd" style="display:block; width:600px;"> <a href="" target="_blank">Java入门第一季</a> <span class="i-new">更新完毕</span> 
+                    <!-- 更新完毕 --> 
+                    <!-- 关注和删除 --> 
+                  </h3>
+                  <div class="study-points" style=""> <span class="i-left span-common">已学0%</span> <span class="i-mid span-common">用时 0分</span> <span class="i-right span-common">学习至1-1 Java简介</span> </div>
+                  <div class="catog-points"  style="margin-top:30px;"> <span class="i-left span-common"><a href="">课时 <i>0</i></a></span> <span class="i-mid span-common"><a href="">笔记 <i>0</i></a></span> <span class="i-right span-common"><a href="">问答 <i>0</i></a></span>
+                    <div class="jxxx"><a>继续学习</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix tl-item  tl-item-first"> <span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em> </span>
+          <div class="course-list course-list-m">
+            <ul class="clearfix">
+              <li class="course-one" data-courseid="85" data-uid="3067577">
+                <div class="course-list-img l"> <a href="" target="_blank"> <img width="200" height="113" alt="人力资源管理师二级经典取证班" src="images/user_02.jpg" /> </a> </div>
+                <div class="course-list-cont">
+                  <h3 class="study-hd" style="display:block; width:600px;"> <a href="" target="_blank">Java入门第一季</a> <span class="i-new">更新完毕</span> 
+                    <!-- 更新完毕 --> 
+                    <!-- 关注和删除 --> 
+                  </h3>
+                  <div class="study-points" style=""> <span class="i-left span-common">已学0%</span> <span class="i-mid span-common">用时 0分</span> <span class="i-right span-common">学习至1-1 Java简介</span> </div>
+                  <div class="catog-points"  style="margin-top:30px;"> <span class="i-left span-common"><a href="">课时 <i>0</i></a></span> <span class="i-mid span-common"><a href="">笔记 <i>0</i></a></span> <span class="i-right span-common"><a href="">问答 <i>0</i></a></span>
+                    <div class="jxxx"><a>继续学习</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix tl-item  tl-item-first"> <span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em> </span>
+          <div class="course-list course-list-m">
+            <ul class="clearfix">
+              <li class="course-one" data-courseid="85" data-uid="3067577">
+                <div class="course-list-img l"> <a href="" target="_blank"> <img width="200" height="113" alt="人力资源管理师二级经典取证班" src="images/user_02.jpg" /> </a> </div>
+                <div class="course-list-cont">
+                  <h3 class="study-hd" style="display:block; width:600px;"> <a href="" target="_blank">Java入门第一季</a> <span class="i-new">更新完毕</span> 
+                    <!-- 更新完毕 --> 
+                    <!-- 关注和删除 --> 
+                  </h3>
+                  <div class="study-points" style=""> <span class="i-left span-common">已学0%</span> <span class="i-mid span-common">用时 0分</span> <span class="i-right span-common">学习至1-1 Java简介</span> </div>
+                  <div class="catog-points"  style="margin-top:30px;"> <span class="i-left span-common"><a href="">课时 <i>0</i></a></span> <span class="i-mid span-common"><a href="">笔记 <i>0</i></a></span> <span class="i-right span-common"><a href="">问答 <i>0</i></a></span>
+                    <div class="jxxx"><a>继续学习</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="wdzbb" id=ContentBox62 style="display:none; margin-top:20px;">
+      <ul class="js-course-list my-space-course study-tl">
+      <li><div class="clearfix tl-item  tl-item-first"><span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em></span><div class="course-list course-list-m ks"><i style="width:287px;">课时15：HR3 培训与开发-2</i><i style="width:200px;">2016年05月21日&nbsp;&nbsp;14:30 - 15:00</i><i style=" float:right;"><a href=""><img src="images/user_16.jpg" style="margin-right:10px;"/>进入直播室</a></i></div></div></li>
+      <li><div class="clearfix tl-item  tl-item-first"><span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em></span><div class="course-list course-list-m ks"><i style="width:287px;">课时15：HR3 培训与开发-2</i><i style="width:200px;">05月21日&nbsp;&nbsp;14:30 - 15:00</i><i style=" float:right;"><a href=""><img src="images/user_16.jpg" style="margin-right:10px;"/>未开课</a></i></div></div></li>
+      <li><div class="clearfix tl-item  tl-item-first"><span class="time" style="top:0px;"> <b>2016</b> <em>03月19日</em></span><div class="course-list course-list-m ks"><i style="width:287px;">课时15：HR3 培训与开发-2</i><i style="width:200px;">05月21日&nbsp;&nbsp;14:30 - 15:00</i><i style=" float:right;"><a href=""><img src="images/user_16.jpg" style="margin-right:10px;"/>未开课</a></i></div></div></li>
+      </ul>
+      </div>
+      </div>
+      <!-- 分页 -->
+      <div class="qa-comment-page"> </div>
+    </div>
+    <!-- .container end --> 
+  </div>
+  <!-- .wrap end--> 
+
+
+
+<!--bottom-->
+<div class="bottom">
+	<div class="bottom_m">
+    	<div class="bottom_l">
+            	<div class="link-item">
+                   <h3>新生路上</h3>
+                       <ul>
+                           <li><a>如何注册</a></li>
+                           <li><a>如何购课</a></li>
+                           <li><a>学习课程</a></li>
+                           <li><a>搜索信息</a></li>
+                       </ul>
+                  </div>
+                  
+                  <div class="link-item">
+                   <h3>课程中心</h3>
+                       <ul>
+                           <li><a>职业课程库</a></li>
+                           <li><a>建造课程库</a></li>
+                           <li><a>学历课程库</a></li>
+                           <li><a>财会课程库</a></li>
+                       </ul>
+                  </div>
+                  
+                  <div class="link-item">
+                   <h3>帮助中心</h3>
+                       <ul>
+                           <li><a>账户问题</a></li>
+                           <li><a>视频观看问题</a></li>
+                           <li><a>常见问题</a></li>
+                       </ul>
+                  </div>
+                  
+                  <div class="link-item">
+                   <h3>新生路上</h3>
+                       <ul>
+                           <li><a>关于学慧网</a></li>
+                           <li><a>联系我们</a></li>
+                           <li><a>投诉建议</a></li>
+                           <li><a>版权声明</a></li>
+                       </ul>
+                  </div>
+                  
+        </div>
+       <div class="bottom_r">
+               <div class="xuehuiwang"><img src="images/logo.png" /></div> 
+       <ul class="tt-wrapper">
+							<li>
+								<a href="" target="_blank"><img src="images/wb1.png" width="40" height="40" /></a>
+							</li>
+							<li>
+								<a href="" target="_blank"><img src="images/wb2.png" width="40" height="40" /><span style="height: 180px;width: 190px;"><img style="height:170px;width: 170px;" src="images/11.jpg"></span></a>
+							</li>
+							<li>						
+								<a href="" target="_blank"><img src="images/wb3.png" width="40" height="40" /><span style="height: 180px;width: 190px;"><img style="height: 170px;width: 170px;" src="images/22.png"></span></a>
+							</li>
+							<li>
+								<a href="" target="_blank"><img src="images/wb4.png" width="40" height="40" /><span style="height: 180px;width: 190px;"><img style="height: 170px;width: 170px;" src="images/33.png"></span></a>
+							</li>
+						</ul>
+ 
+        </div>
+    </div>
+    <div class="footer">
+
+<a class="mlm" href="/archive/course">课程存档</a>
+<div class="mts">课程内容版权均归<a href="/"> 北京学慧网络教育科技有限公司</a>所有<a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">京ICP备15007758号-1&nbsp;&nbsp;京ICP证150990号 </a></div>
+
+</div>
+</div>
+
+
+
+
+
+<script>
+    $('img[data-src]').lazyload({failure_limit: 10});
+    var index = 0;
+        timer = null;
+        len=$(".scrollul li").length;
+        function NextPage(){
+            if (index > len-1)
+                index = 0;
+            $(".scrollul li").stop(true,false).filter(":visible").fadeOut(500).parent().children().eq(index).fadeIn(1000);
+            $('.scrollBtn em').removeClass('aHover');
+            $('.scrollBtn em').eq(index).addClass('aHover');
+            bgColor();
+        }
+        function PrevPage(){
+            if(index<0)
+                index = len-1;
+            $(".scrollul li").stop(true,false).filter(":visible").fadeOut(500).parent().children().eq(index).fadeIn(1000);
+            $('.scrollBtn em').removeClass('aHover');
+            $('.scrollBtn em').eq(index).addClass('aHover');
+            bgColor();
+        }
+        function bgColor(){
+            var yanse=$(".scrollul li").eq(index).attr('yanse');
+            $('.n-index-banner').css({"background-color":yanse})
+        }
+        var timer = setInterval(function(){index++ ;NextPage();},5000)
+        $(".scrollul,#ep-arrow-left,#ep-arrow-right").hover(function(){
+            clearInterval(timer);
+        },function(){
+           timer = setInterval(function(){index++ ;NextPage();},5000)
+        })
+        $("#ep-arrow-right").click(function(){ index++ ;NextPage();});
+        $("#ep-arrow-left").click(function(){ index-- ;PrevPage();});
+        $('.scrollBtn em').click(function(){
+            index=$(this).index();
+            NextPage();
+        });
+        var courseIndex=0;
+        function coursePage(){
+             if(courseIndex >1)
+                courseIndex = 0;
+            $('.n-screen-tit2 li').removeClass('active');
+            $('.n-screen-tit2 li').eq(courseIndex).addClass('active');
+            $('.n-index-course .n-course-box').hide();
+            $('.n-index-course .n-course-box').eq(courseIndex).show();
+            if(!$('.n-screen-tit2 li').eq(courseIndex).attr('lazy')){
+                 $('img[data-src]').lazyload({failure_limit: 0});
+                 $('.n-screen-tit2 li').eq(courseIndex).attr('lazy',true);
+            }
+        }
+        var courseTimer = setInterval(function(){courseIndex++ ;coursePage();},5000);
+        $(".n-index-course").hover(function(){
+            clearInterval(courseTimer);
+        },function(){
+           courseTimer = setInterval(function(){courseIndex++ ;coursePage();},5000);
+        })
+    $(function() {
+        bgColor();
+        $('.n-screen-tit2 li').hover(function() {
+            $('.n-screen-tit2 li').removeClass('active');
+            $(this).addClass('active');
+            $('.n-index-course .n-course-box').hide();
+            $('.n-index-course .n-course-box').eq($(this).index()).show();
+            if(!$(this).attr('lazy')){
+                 $('img[data-src]').lazyload({failure_limit: 0});
+                 $(this).attr('lazy',true);
+            }
+       });
+       
+     
+        $('.n-video-list li').click(function() {
+            var url = $(this).find('img').attr('video');
+            var tourl = '';
+            var videoimg = $(this).find('img').attr('src');
+            var configs = {sharing:{link:$(this).find('img').attr('data-href')}};
+            popVideoShow(url, videoimg,tourl,configs);
+        });
+        $('.n-video-list li').hover(function() {
+            $(this).addClass('active');
+        }, function() {
+            $(this).removeClass('active');
+        });
+        $('.n-screen-tit3 li').hover(function() {
+            $('.n-screen-tit3 li').removeClass('active');
+            $(this).addClass('active');
+            $('.n-index-students .n-students-con').hide();
+            $('.n-index-students .n-students-con').eq($(this).index()).show();
+            if(!$(this).attr('lazy')){
+                 $('img[data-src]').lazyload({failure_limit: 0});
+                 $(this).attr('lazy',true);
+            }
+        });
+        $('.course-time .n-collect').click(function(){
+            if (_MID_ == 0) {
+                Login(location.href);
+                return false;
+            }
+            var id=$(this).attr("treeid");
+            var status=$(this).attr("status");
+            var type="tree";
+            if(status==0){
+                var url=U('ask/Index/doFavorite');
+            }else{
+                var url=U('course/Public/doDelFavorite');
+            }
+            var self=$(this);
+            $.post(url, {id: id, type: type}, function(data) {
+                if (data.status == '1') {
+                    ui.success(data.info);
+                    if(status==0){
+                         self.addClass("n-collect-ok");
+                         self.attr("status","1");
+                    }else{
+                        self.removeClass("n-collect-ok");
+                        self.attr("status","0");
+                    }
+                }else{
+                     ui.error(data.info);
+                }
+            }, 'json');
+        })
+    })
+</script> 
+
+</body>
+</html>
+  
